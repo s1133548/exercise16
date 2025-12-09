@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hover Squares</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .square {
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+      transition: all 0.3s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 24px;
+      border-radius: 8px;
+    }
+
+    #square1:hover {
+      width: 200px; /* becomes longer */
+    }
+
+    #square2:hover {
+      transform: scale(1.5); /* becomes larger */
+    }
+  </style>
+</head>
+<body>
+  <div id="square1" class="square">1</div>
+  <div id="square2" class="square">2</div>
+</body>
+</html>
